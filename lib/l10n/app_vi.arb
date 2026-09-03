@@ -1,0 +1,31 @@
+{
+  "@@locale": "vi",
+  "appTitle": "MeteoFocus",
+  "@appTitle": {"description": "Tên ứng dụng, hiển thị trên title bar/tab web"},
+
+  "navDashboard": "Dashboard",
+  "@navDashboard": {"description": "Nhãn tab bottom nav - Dashboard"},
+  "navLocation": "Địa Điểm",
+  "@navLocation": {"description": "Nhãn tab bottom nav - Location Search"},
+  "navSettings": "Cài Đặt",
+  "@navSettings": {"description": "Nhãn tab bottom nav - Settings"},
+
+  "greetingMorning": "Chào buổi sáng",
+  "@greetingMorning": {"description": "Lời chào header Dashboard buổi sáng (05:00-11:00)"},
+  "greetingAfternoon": "Chào buổi chiều",
+  "@greetingAfternoon": {"description": "Lời chào header Dashboard buổi chiều (11:00-18:00)"},
+  "greetingEvening": "Chào buổi tối",
+  "@greetingEvening": {"description": "Lời chào header Dashboard buổi tối (18:00-05:00)"},
+  "forecastLabel": "Dự Báo",
+  "@forecastLabel": {"description": "Nhãn phụ cạnh lời chào trong header Dashboard"},
+
+  "weatherDetailTitle": "Full Weather Detail",
+  "@weatherDetailTitle": {"description": "Tiêu đề màn hình Weather Detail"},
+  "locationSearchTitle": "Location Search",
+  "@locationSearchTitle": {"description": "Tiêu đề màn hình Location Search"},
+  "settingsTitle": "Account / Settings",
+  "@settingsTitle": {"description": "Tiêu đề màn hình Settings"},
+
+  "comingSoon": "Sắp ra mắt",
+  "@comingSoon": {"description": "Placeholder tạm thời cho nội dung màn hình chưa dựng xong"}
+}

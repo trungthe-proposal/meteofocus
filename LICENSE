@@ -1,0 +1,36 @@
+MIT License
+
+Copyright (c) 2026 trungthe
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Ghi chú về assets (không thuộc phạm vi MIT ở trên):
+
+- `assets/icons/wicon-*.png` (bộ icon thời tiết): tạo bằng Google Gemini
+  (free tier, Flash model), được tác giả cắt ghép thành từng icon riêng.
+  Nội dung do AI tạo sinh — không đại diện cho tuyên bố sở hữu bản quyền
+  độc quyền tuyệt đối, chỉ dùng cho mục đích portfolio/demo.
+- App icon (Android/iOS/Web/Windows, thư mục `design_meteofocus/icons/android`
+  và `.../ios`): xuất bởi công cụ EasyAppIcon từ artwork của tác giả.
+- Font Be Vietnam Pro tải qua Google Fonts (package `google_fonts`), theo
+  SIL Open Font License riêng của font, không thuộc MIT ở trên.
+- Dữ liệu thời tiết từ Open-Meteo (CC BY 4.0) — xem ghi chú attribution
+  trong `ARCHITECTURE.md §4` và `DEVELOPMENT.md §8`.

@@ -1,0 +1,15 @@
+{
+  "@@locale": "en",
+  "appTitle": "MeteoFocus",
+  "navDashboard": "Dashboard",
+  "navLocation": "Location",
+  "navSettings": "Settings",
+  "greetingMorning": "Good morning",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "forecastLabel": "Forecast",
+  "weatherDetailTitle": "Full Weather Detail",
+  "locationSearchTitle": "Location Search",
+  "settingsTitle": "Account / Settings",
+  "comingSoon": "Coming soon"
+}
