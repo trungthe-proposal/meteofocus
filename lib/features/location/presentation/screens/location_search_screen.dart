@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../../l10n/app_localizations.dart';
-import '../../../../shared/widgets/coming_soon_placeholder.dart';
+import '../widgets/location_search_panel.dart';
 
 class LocationSearchScreen extends StatelessWidget {
   const LocationSearchScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
     return SafeArea(
-      child: ComingSoonPlaceholder(title: l10n.locationSearchTitle),
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: LocationSearchPanel(onCitySelected: () => context.go('/')),
+      ),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'app_colors.dart';
+import 'sky_gradient.dart';
 
 abstract final class AppTheme {
   static ThemeData light() {
@@ -15,6 +16,7 @@ abstract final class AppTheme {
       scaffoldBackgroundColor: AppColors.pageBackground,
     );
     return base.copyWith(
+      extensions: const [SkyGradient.standard],
       textTheme: GoogleFonts.beVietnamProTextTheme(base.textTheme).apply(
         bodyColor: AppColors.textPrimary,
         displayColor: AppColors.textPrimary,

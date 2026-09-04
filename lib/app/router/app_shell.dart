@@ -1,11 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../features/weather/presentation/widgets/mini_weather_widget.dart';
 import '../../l10n/app_localizations.dart';
+import '../constants/breakpoints.dart';
 
-/// Bottom nav Dashboard/Địa Điểm/Cài Đặt — xem `ARCHITECTURE.md §5`.
+/// Bottom nav Dashboard/Địa Điểm/Cài Đặt — xem `ARCHITECTURE.md §5`. Dưới
+/// `AppBreakpoints.coverScreenMax` chuyển hẳn sang `MiniWeatherWidget` (Cover
+/// Screen) thay vì 3 tab, vì không đủ chỗ hiển thị bottom nav.
 class AppShell extends StatelessWidget {
   const AppShell({super.key, required this.navigationShell});
+
+  final StatefulNavigationShell navigationShell;
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        if (constraints.maxWidth < AppBreakpoints.coverScreenMax) {
+          return const MiniWeatherWidget();
+        }
+        return _NormalShell(navigationShell: navigationShell);
+      },
+    );
+  }
+}
+
+class _NormalShell extends StatelessWidget {
+  const _NormalShell({required this.navigationShell});
 
   final StatefulNavigationShell navigationShell;
 
@@ -17,8 +39,10 @@ class AppShell extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: navigationShell.currentIndex,
         labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
-        onDestinationSelected: (index) =>
-            navigationShell.goBranch(index, initialLocation: index == navigationShell.currentIndex),
+        onDestinationSelected: (index) => navigationShell.goBranch(
+          index,
+          initialLocation: index == navigationShell.currentIndex,
+        ),
         destinations: [
           NavigationDestination(
             icon: const Icon(Icons.dashboard_outlined),
