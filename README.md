@@ -6,7 +6,7 @@
 
 🇬🇧 [English](#english) · 🇻🇳 [Tiếng Việt](#tiếng-việt)
 
-🌐 [Live demo](https://meteofocus.vercel.app) &nbsp;·&nbsp; 📦 [Source](https://github.com/trungthe-proposal/meteofocus#top)  &nbsp;·&nbsp; 📄 [License](LICENSE)
+🌐 [Live demo](https://meteofocus.vercel.app) &nbsp;·&nbsp; 📦 [Source](https://github.com/trungthe-proposal/meteofocus/blob/master/README.md)  &nbsp;·&nbsp; 📄 [License](LICENSE)
 
 </div>
 
